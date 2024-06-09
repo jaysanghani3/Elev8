@@ -1,0 +1,6 @@
+export { default as Homepage } from './Homepage'
+export { default as ProductsCategories } from './Products/ProductsCategories'
+export { default as ProductCategoryView } from './Products/ProductCategoryView'
+export { default as Contactus } from './Contactus'
+export { default as Downloads } from './Downloads'
+export { default as Aboutus } from './Aboutus'
