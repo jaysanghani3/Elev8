@@ -8,6 +8,11 @@ export { default as Hubspoter} from "./Hubspotters.jpg"
 export { default as Aboutus2} from "./about2.jpg"
 export { default as Aboutus3} from "./about3.jpg"
 export {default as abus} from './aboutus.jpg'
+export { default as HighReach1} from './HighReach1.jpg'
+export { default as HighReach2} from './Highreach2.jpg'
+export { default as HighReach3} from './HighReach3.jpg'
+export { default as HighReach4} from './HighReach4.jpg'
+export { default as HighReach5} from './HighReach5.jpg'
 
 export { default as VTLCover } from "./VTLCover.jpg";
 

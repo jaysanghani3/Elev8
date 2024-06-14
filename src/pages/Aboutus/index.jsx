@@ -1,5 +1,5 @@
 import { Hubspoter, Aboutus2, Aboutus3 } from '../../assets'
-
+import Certificate from './Certificate'
 const Aboutus = () => {
     return (
         <div>
@@ -8,7 +8,7 @@ const Aboutus = () => {
                     <span className='text-[#26256B] text-[40px]'>About US</span>
                     <p>HubSpot’s company and culture are a lot like our product. They’re <br /> crafted, not cobbled, for a delightful experience.</p>
                 </div>
-                <img src={Hubspoter} alt='about1img' className='h-[260px] w-[460px]' />
+                <img src={Hubspoter} alt='about1img' className='h-[300px] w-[550px]' />
             </div>
             <div className='bg-white flex gap-24 justify-center p-14 flex-col'>
                 <div className='flex justify-between h-68 flex-col sm:flex-row sm:px-8 items-center gap-10 '>
@@ -29,6 +29,7 @@ const Aboutus = () => {
                     <img src={Aboutus3} alt='about1img' className='h-[350px] w-[500px]' />
                 </div>
             </div>
+            <Certificate/>
         </div>
     )
 }
