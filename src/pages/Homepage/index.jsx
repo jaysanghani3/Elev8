@@ -30,14 +30,13 @@ const Homepage = () => (
       />
       Your browser does not support the video tag.
     </video>
-    <div className="flex justify-between p-5 rounded-lg shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] mt-10">
+    <Link to="/products" className="flex justify-between p-5 rounded-lg shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] mt-10">
       <div className="md:w-9/12 pr-5 flex flex-col">
-        <Link
-          to="/products"
+        <h1
           className="text-gray-800 text-3xl font-bold tracking-wider underline decoration-yellow-400 underline-offset-8 decoration-4 "
         >
           Our Products
-        </Link>
+        </h1>
         <p className="text-justify mt-11">
           Elev8 is the leading manufacturer of aerial work platforms that are used in construction, maintenance, and
           other applications. Our vision is to provide the best possible equipment for our customers, so they can work
@@ -48,15 +47,15 @@ const Homepage = () => (
       <div className="md:w-3/12 hidden md:block p-3">
         <img src={C0} alt="construction" className="object-cover rounded-lg" />
       </div>
-    </div>
-    <div className="flex justify-between flex-row-reverse p-5 rounded-lg shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] mt-10">
+    </Link>
+    <Link
+      to="/aboutus" className="flex justify-between flex-row-reverse p-5 rounded-lg shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] mt-10">
       <div className="md:w-9/12 pr-5 flex flex-col">
-        <Link
-          to="/aboutus"
+        <h1
           className="text-gray-800 text-3xl font-bold tracking-wider underline decoration-yellow-400 underline-offset-8 decoration-4 self-end"
         >
           About Us
-        </Link>
+        </h1>
         <p className="text-justify mt-11">
           Elev8 Lifts is the premier manufacturer of aerial work platforms for construction, maintenance, and more. Our
           mission is to ensure safety and efficiency at height by providing top-quality equipment. We are dedicated to
@@ -67,7 +66,7 @@ const Homepage = () => (
       <div className="md:w-3/12 hidden md:block p-3">
         <img src={abus} alt="construction" className="object-cover rounded-lg" />
       </div>
-    </div>
+    </Link>
     <Milestones />
   </div>
 );

@@ -46,8 +46,8 @@ const Downloads = () => {
   ];
 
   return (
-    <div className="w-full flex justify-center items-center bg-[#eef2fd]">
-      <div className="w-[60%] flex flex-col rounded-xl p-10 justify-center my-10 shadow-slate-400 shadow-lg bg-white">
+    <div className="w-full flex justify-center items-center bg-slate-300">
+      <div className="md:w-7/12 w-11/12 flex flex-col rounded-xl p-8 justify-center my-5 md:my-10 shadow-slate-400 shadow-lg bg-white">
         <h1 className="text-4xl">Download</h1>
         <p className="text-md">Download our company Certificates, catalog, ISO Certificates ...</p>
         <div className="flex flex-col py-9 gap-10">
@@ -57,14 +57,12 @@ const Downloads = () => {
                 <p className="text-2xl font-bold text-[#01204E]">{cert.title}</p>
                 <p className='text-justify'>{cert.description}</p>
               </div>
-              <div className="flex gap-3">
                 <button
                   className="bg-[#01204E] text-white px-10 py-2 text-nowrap rounded-lg"
                   onClick={() => handleDownload(cert.fileUrl, cert.fileName)}
                 >
                   Download
                 </button>
-              </div>
             </div>
           ))}
         </div>
