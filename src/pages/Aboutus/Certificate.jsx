@@ -1,20 +1,17 @@
-import React from 'react';
-import { HighReach1,HighReach2,HighReach3,HighReach4,HighReach5 } from '../../assets/index';
+import { HighReach1, HighReach2, HighReach3, HighReach4, HighReach5 } from '../../assets/index';
 
 const Certificate = () => {
-  
-  const HRCertificate = [HighReach1,HighReach2,HighReach3,HighReach4,HighReach5]
+
+  const HRCertificate = [HighReach1, HighReach2, HighReach3, HighReach4, HighReach5]
   return (
-    <div className='w-full bg-cover text-center' >
-      <h1 className='text-3xl text-center py-11 inline-block border-b-4 border-[#9da2ac]'>
+    <div className='mx-auto text-center bg-[#F6F9FC] md:px-10 pb-10' >
+      <h1 className='text-4xl text-[#26256B] font-semibold text-center py-11 inline-block tracking-wider underline decoration-yellow-400 underline-offset-8 decoration-4 '>
         Certificates
       </h1>
-      <div className='flex flex-wrap justify-center items-center gap-5'>
-            {
-                HRCertificate.map((ele,index) =>{
-                  return  <img src={ele} key={index} className='w-[200px] h-[280px] py-5 px-3'/>
-                })
-            }
+      <div className='flex flex-wrap justify-center md:justify-between items-center'>
+        {
+          HRCertificate.map((ele, index) => <img src={ele} key={index} className='w-[300px] border rounded shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] mb-6' />)
+        }
       </div>
     </div>
   );
