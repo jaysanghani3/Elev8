@@ -16,7 +16,7 @@ const Footer = () => {
           </nav>
           <div className="flex flex-col gap-4 mt-4">
             <Link to="/products" className="bg-white text-gray-800 font-bold py-2 px-4 text-center rounded">View Products</Link>
-            <Link to="/downloads" className="bg-black text-white font-semibold py-2 px-4 text-center rounded">Downloads</Link>
+            <Link to="/downloads" className="bg-white text-gray-800 font-bold py-2 px-4 text-center rounded">Downloads</Link>
             <Link to="/contactus" className="bg-white text-gray-800 font-bold py-2 px-4 text-center rounded">Get in Touch</Link>
           </div>
         </div>
