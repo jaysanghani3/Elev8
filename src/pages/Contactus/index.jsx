@@ -71,6 +71,8 @@ const Contactus = () => {
             setErrors({});
         } catch (error) {
             console.error('Error sending email:', error);
+            setIsLodding(false);
+            toast.error('Something went wrong. Please try again later.');
         }
     };
 
