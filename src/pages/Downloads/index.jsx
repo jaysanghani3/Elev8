@@ -4,14 +4,8 @@ import ISO_Validation_Certificate from '../../assets/pdfs/HIGHREACH_ISO_9001_201
 
 const Downloads = () => {
 
-  const handleDownload = (fileUrl, fileName) => {
+  const handleDownload = (fileUrl) => {
     window.open(fileUrl, '_blank');
-    const link = document.createElement('a');
-    link.href = fileUrl;
-    link.download = fileName;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
   }
 
   const certificates = [
@@ -19,28 +13,24 @@ const Downloads = () => {
       title: "Company Catalog",
       description: "Explore our company catalog for detailed information on our latest products, services, and innovations. Understand our full range of capabilities and solutions. Download now to see how we can meet your industrial needs.",
       fileUrl: CertificateOfCompliance,
-      fileName: '2250_HIGHREACH.pdf',
       buttonText: "Company Catalog"
     },
     {
       title: "Certificate Of Compliance",
       description: "Explore our company catalog for detailed information on our latest products, services, and innovations. Understand our full range of capabilities and solutions. Download now to see how we can meet your industrial needs.",
       fileUrl: CertificateOfCompliance,
-      fileName: '2250_HIGHREACH.pdf',
       buttonText: "Certificate of Compliance"
     },
     {
       title: "ISO Standard Certificates",
       description: "Explore our company catalog for detailed information on our latest products, services, and innovations. Understand our full range of capabilities and solutions. Download now to see how we can meet your industrial needs.",
       fileUrl: ISO_Stander_Certificate,
-      fileName: '2253_HIGHREACH.pdf',
       buttonText: "ISO Stander Certificate"
     },
     {
       title: "ISO Validation Certificates",
       description: "Explore our company catalog for detailed information on our latest products, services, and innovations. Understand our full range of capabilities and solutions. Download now to see how we can meet your industrial needs.",
       fileUrl: ISO_Validation_Certificate,
-      fileName: 'HIGHREACH_ISO_9001_2015_CERTIFICATE.pdf',
       buttonText: "ISO Validation Certificates"
     }
   ];
@@ -59,7 +49,7 @@ const Downloads = () => {
               </div>
                 <button
                   className="bg-[#01204E] text-white px-10 py-2 text-nowrap rounded-lg"
-                  onClick={() => handleDownload(cert.fileUrl, cert.fileName)}
+                  onClick={() => handleDownload(cert.fileUrl)}
                 >
                   Download
                 </button>

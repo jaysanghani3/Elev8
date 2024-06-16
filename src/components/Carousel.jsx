@@ -13,7 +13,7 @@ const Carousel = ({ slides, height }) => {
 
     return (
         <div className='flex flex-col items-center justify-center gap-0'>
-            <img src={slides[currentIndex]} alt='carousel' className={`w-full object-cover rounded-2xl ${height}`} />
+            <img src={slides[currentIndex]} alt='carousel' className={`object-cover rounded-lg ${height}`} />
             <div className='flex justify-center text-2xl mt-2'>
                 {slides.map((_, slideIndex) => (
                     <svg className="cursor-pointer" onClick={() => setCurrentIndex(slideIndex)} key={slideIndex} width="50px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
