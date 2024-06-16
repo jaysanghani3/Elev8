@@ -13,7 +13,7 @@ const ProductsCategories = () => {
             <div className='flex flex-col md:flex-row justify-center mt-10'>
                 {
                     categories.map((category) => (
-                        <Link to={`/products/${category.id}`} key={category.id} className={`flex flex-col mb-10 items-center border shadow-md rounded-lg p-6 hover:bg-slate-100 justify-between ${category.id === 'vtl' ? 'me-10' : ''}`}>
+                        <Link to={`/products/${category.id}`} key={category.id} className={`flex flex-col mb-10 items-center border shadow-md rounded-lg p-6 hover:bg-slate-100 justify-between ${category.id === 'vtl' ? 'md:me-10' : ''}`}>
                             <img src={category.image} alt="products" className='rounded-md object-cover w-80' />
                             <h1 className="text-center font-bold text-[#01204E] text-2xl pt-4 ">{category.name}</h1>
                         </Link>
