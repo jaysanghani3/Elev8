@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Carousel, Milestones } from "../../components";
 import { C0, C1, C2, C3, C4, A0 } from "../../assets";
+import Vd from "../../assets/VTLMARKETING.webm";
 
 const Homepage = () => (
   <div className="container mx-auto px-4">
@@ -9,10 +10,10 @@ const Homepage = () => (
     <div className="md:w-8/12 mx-auto mb-7">
       <Carousel slides={[C0, C1, C2, C3, C4]} height={"w-full h-[250px] md:h-[560px]"}/>
     </div>
-    <video className="md:w-8/12 mx-auto rounded-lg" autoPlay muted controls>
+    <video className="md:w-8/12 mx-auto rounded-lg" autoPlay muted controls controlsList="nodownload">
       <source
-        src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-        type="video/mp4"
+        src={Vd}
+        type="video/mp4"  
       />
       Your browser does not support the video tag.
     </video>
