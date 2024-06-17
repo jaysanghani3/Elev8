@@ -34,13 +34,13 @@ const Downloads = () => {
   return (
     <div className="w-full flex justify-center items-center bg-slate-300">
       <div className="md:w-7/12 w-11/12 flex flex-col rounded-xl p-8 justify-center my-5 md:my-10 shadow-slate-400 shadow-lg bg-white">
-        <h1 className="text-4xl">Download</h1>
-        <p className="text-md">Download our company Certificates, catalog, ISO Certificates ...</p>
-        <div className="flex flex-col py-9 gap-10">
+        <h1 className="text-2xl md:text-4xl">Download</h1>
+        <p className="text-lg ">Download our company Certificates, catalog, ISO Certificates ...</p>
+        <div className="flex flex-col py-9">
           {certificates.map((cert, index) => (
-            <div key={index} className="flex flex-col sm:flex-row gap-9 justify-between items-center ">
-              <div className="flex flex-col">
-                <p className="text-xl text-red-600 font-semibold">{cert.title}</p>
+            <div key={index} className={`flex flex-col lg:flex-row lg:justify-between lg:items-center ${index % 2 != 0 ? 'bg-slate-100' : ''} my-2 p-3 rounded-lg`}>
+              <div className="flex flex-col lg:me-4 mb-2">
+                <p className="text-lg md:text-xl text-red-600 font-semibold">{cert.title}</p>
                 <p className='text-justify text-[#01204E]'>{cert.description}</p>
               </div>
                 <button
