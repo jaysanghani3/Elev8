@@ -9,8 +9,8 @@ const Certificate = () => {
         Certificates
       </h1>
       <div className='flex flex-wrap justify-center items-center'>
-        <Carousel slides={[HighReach1, HighReach2]} height={'w-[300px] md:me-12 border rounded shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]'}/>
-        <Carousel slides={[HighReach3, HighReach4]} height={'w-[300px] md:me-12 border rounded shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]'} />
+        <Carousel slides={[HighReach1, HighReach2]} styles={'w-[300px] md:me-12 border rounded shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]'}/>
+        <Carousel slides={[HighReach3, HighReach4]} styles={'w-[300px] md:me-12 border rounded shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]'} />
         <img src={HighReach5} className='w-[300px] border rounded shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] mb-10' />
       </div>
     </div>

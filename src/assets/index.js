@@ -13,6 +13,8 @@ export { default as HighReach3} from './About/HighReach3.webp'
 export { default as HighReach4} from './About/HighReach4.webp'
 export { default as HighReach5} from './About/HighReach5.webp'
 
+
+export { default as VTLCATALOG } from "./VTLCATALOG.webp";
 export { default as VTLCover } from "./VTLCover.webp";
 export { default as SCLCover } from "./SCLCover.webp";
 

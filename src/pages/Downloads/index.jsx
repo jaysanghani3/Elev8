@@ -10,28 +10,24 @@ const Downloads = () => {
 
   const certificates = [
     {
-      title: "Company Catalog",
-      description: "Explore our company catalog for detailed information on our latest products, services, and innovations. Understand our full range of capabilities and solutions. Download now to see how we can meet your industrial needs.",
+      title: "VTL DC Series Catalog",
+      description:  "Explore our VTL DC Series catalog for detailed information on our latest product features and innovations.Understand our full range of capabilities and solutions.Download now to see how we can meet your industrial needs.",
       fileUrl: CertificateOfCompliance,
-      buttonText: "Company Catalog"
     },
     {
-      title: "Certificate Of Compliance",
-      description: "Explore our company catalog for detailed information on our latest products, services, and innovations. Understand our full range of capabilities and solutions. Download now to see how we can meet your industrial needs.",
+      title: "CERTIFICATE OF COMPLIANCE - CE",
+      description: "",
       fileUrl: CertificateOfCompliance,
-      buttonText: "Certificate of Compliance"
     },
     {
-      title: "ISO Standard Certificates",
-      description: "Explore our company catalog for detailed information on our latest products, services, and innovations. Understand our full range of capabilities and solutions. Download now to see how we can meet your industrial needs.",
+      title: "CERTIFICATE OF COMPLIANCE - ISO 16368:2010",
+      description: "",
       fileUrl: ISO_Stander_Certificate,
-      buttonText: "ISO Stander Certificate"
     },
     {
-      title: "ISO Validation Certificates",
-      description: "Explore our company catalog for detailed information on our latest products, services, and innovations. Understand our full range of capabilities and solutions. Download now to see how we can meet your industrial needs.",
+      title: "CERTIFICATE OF COMPLIANCE - ISO 9001:2015",
+      description: "",
       fileUrl: ISO_Validation_Certificate,
-      buttonText: "ISO Validation Certificates"
     }
   ];
 
@@ -42,10 +38,10 @@ const Downloads = () => {
         <p className="text-md">Download our company Certificates, catalog, ISO Certificates ...</p>
         <div className="flex flex-col py-9 gap-10">
           {certificates.map((cert, index) => (
-            <div key={index} className="flex flex-col sm:flex-row gap-9 justify-center items-center">
+            <div key={index} className="flex flex-col sm:flex-row gap-9 justify-between items-center ">
               <div className="flex flex-col">
-                <p className="text-2xl font-bold text-[#01204E]">{cert.title}</p>
-                <p className='text-justify'>{cert.description}</p>
+                <p className="text-xl text-red-600 font-semibold">{cert.title}</p>
+                <p className='text-justify text-[#01204E]'>{cert.description}</p>
               </div>
                 <button
                   className="bg-[#01204E] text-white px-10 py-2 text-nowrap rounded-lg"

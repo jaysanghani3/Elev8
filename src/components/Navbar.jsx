@@ -26,17 +26,17 @@ const Navbar = () => {
             <Link to='/'>
                 <img src={Logo} className="h-10" alt="Elev8" />
             </Link>
-            <div className="md:hidden">
+            <div className="sm:hidden">
                 <RenderToggleButton />
             </div>
-            <div className={`fixed inset-0 z-50 flex flex-col bg-gray-200 transition-transform transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} md:relative md:flex-row md:translate-x-0 md:items-center md:justify-end md:bg-transparent md:space-x-6 md:p-0`}>
-                <div className="flex items-center justify-between p-4 md:hidden">
+            <div className={`fixed inset-0 z-50 flex flex-col bg-gray-200 transition-transform transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} sm:relative sm:flex-row sm:translate-x-0 sm:items-center sm:justify-end sm:bg-transparent sm:space-x-1 md:space-x-4 sm:p-0`}>
+                <div className="flex items-center justify-between p-4 sm:hidden">
                     <img src={Logo} className="h-10" alt="Elev8" />
                     <RenderToggleButton />
                 </div>
                 {
                     menus.map((link, index) => (
-                        <Link key={index} to={link.route} onClick={() => setIsOpen(!isOpen)} className="p-4 hover:bg-gray-800 hover:text-white rounded text-center font-semibold md:p-0 md:px-4 md:py-2">
+                        <Link key={index} to={link.route} onClick={() => setIsOpen(!isOpen)} className="p-4 hover:bg-gray-800 hover:text-white rounded text-center font-semibold sm:p-0 sm:px-2 md:px-4 sm:py-2">
                             {link.name}
                         </Link>
                     ))
