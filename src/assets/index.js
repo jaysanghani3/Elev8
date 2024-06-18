@@ -54,3 +54,5 @@ export { default as C1 } from "./Carousel/C1.webp";
 export { default as C2 } from "./Carousel/C2.webp";
 export { default as C3 } from "./Carousel/C3.webp";
 export { default as C4 } from "./Carousel/C4.webp";
+
+
