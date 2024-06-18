@@ -13,8 +13,8 @@ const Homepage = () => (
       />
       Your browser does not support the video tag.
     </video>
-    <Link to="/products" className="w-11/12 lg:w-10/12 mx-auto flex flex-col md:flex-row justify-between p-5 rounded-lg shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] mt-10 hover:bg-gray-100">
-      <div className="lg:w-9/12 md:w-6/12 pr-5 flex flex-col">
+    <Link to="/products" className="w-11/12 lg:w-10/12 mx-auto flex justify-between p-5 rounded-lg shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] mt-10 hover:bg-gray-200">
+      <div className="lg:w-8/12 xl:w-9/12 pr-5 flex flex-col">
         <h1
           className="text-gray-800 text-3xl font-bold tracking-wider underline decoration-yellow-400 underline-offset-8 decoration-4 "
         >
@@ -24,12 +24,10 @@ const Homepage = () => (
           “ Elev8 is a brand that prides itself on manufacturing some of the most reliable, agile, robust, and safety-focused Mobile Elevated Work Platforms (MEWPs). We have a range of <i>push around</i> and <i>self propelled</i> machines in our portfolio. Our customers can choose a suitable machine based on the application of work where they want to deploy our machines. Our machines can service heights as high as <i>40 feet / 12 m</i> using either <i>single vertical mast technology or a multi stack scissor technology. </i>”
         </p>
       </div>
-      <div className="lg:w-3/12 md:w-6/12 bg-red-100 mt-5">
-        <img src={C0} alt="construction" className="object-cover rounded-lg" />
-      </div>
+      <img src={C0} alt="construction" className="lg:w-4/12 xl:w-3/12 hidden lg:block mt-4 object-cover rounded-lg" />
     </Link>
     <Link
-      to="/aboutus" className="w-11/12 lg:w-10/12 mx-auto flex justify-between flex-row-reverse p-5 rounded-lg shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] mt-10 hover:bg-gray-100">
+      to="/aboutus" className="w-11/12 lg:w-10/12 mx-auto flex justify-between flex-row-reverse p-5 rounded-lg shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] mt-10 hover:bg-gray-200">
       <div className="lg:w-9/12 pr-5 flex flex-col">
         <h1
           className="text-gray-800 text-3xl font-bold tracking-wider underline decoration-yellow-400 underline-offset-8 decoration-4 self-end"
@@ -41,9 +39,7 @@ const Homepage = () => (
 
         </p>
       </div>
-      <div className="lg:w-3/12 hidden lg:block p-3">
-        <img src={A0} alt="construction" className="object-cover rounded-lg" />
-      </div>
+      <img src={A0} alt="construction" className="lg:w-4/12 hidden lg:block object-scale-down rounded-lg " />
     </Link>
     <Milestones />
   </div>
