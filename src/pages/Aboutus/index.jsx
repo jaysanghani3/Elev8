@@ -1,6 +1,10 @@
 import { A1, C3, C4 } from '../../assets'
 import Certificate from './Certificate'
 const Aboutus = () => {
+    
+
+    
+
     return (
         <>
             <div className='bg-[#F6F9FC] flex flex-col lg:flex-row py-10 px-5 lg:px-12 justify-between items-center '>
@@ -30,6 +34,8 @@ const Aboutus = () => {
                 </div>
             </div>
             <Certificate />
+           
+           
         </>
     )
 }
