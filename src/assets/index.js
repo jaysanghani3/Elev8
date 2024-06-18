@@ -54,3 +54,9 @@ export { default as C1 } from "./Carousel/C1.webp";
 export { default as C2 } from "./Carousel/C2.webp";
 export { default as C3 } from "./Carousel/C3.webp";
 export { default as C4 } from "./Carousel/C4.webp";
+
+export {default as arrow} from "./About/right-arrow.webp"
+export {default as sdg9} from "./About/sdg9.webp"
+export {default as sdg8} from "./About/sdggoals8.webp"
+export {default as corevalues} from "./About/corevalues.webp"
+
