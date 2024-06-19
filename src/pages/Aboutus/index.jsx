@@ -11,7 +11,7 @@ const Aboutus = () => (
         </div>
         <div className='bg-white flex justify-center  py-10 sm:px-14  md:px-10 px-5 flex-col'>
             <div className='flex justify-between flex-col md:flex-row items-center'>
-                <img src={C3} alt='about1img' className='w-[550px] sm:w-[450px] md:w-[350px] lg:w-[500px] rounded-md order-2 md:order-1 my-6 md:mt-16' />
+                <img src={C3} alt='about1img' className='w-[550px] sm:w-[450px] md:w-[350px] lg:w-[500px] rounded-md order-2 md:order-1 my-6' />
                 <div className='flex flex-col order-1 md:order-2 md:ms-10'>
                     <h1 className='text-[#26256B] text-4xl font-semibold mb-6 tracking-wider underline decoration-yellow-400 underline-offset-8 decoration-4'>Our Mission</h1>
                     <p> “ We believe not in just growing bigger, but more importantly in growing better. And growing better means aligning the success of your own business with the success of your customers. Working with this philosophy we strive to provide leading solutions to our customers that will help them grow their business <i> quickly, efficiently and most importantly safely. </i>”</p>
@@ -35,11 +35,11 @@ const Aboutus = () => (
             <img src={corevalues} alt='innovation' className='w-[500px]  md:mr-10' />
             <div className='flex flex-col justify-center '>
                 <ul className='list-disc ml-5'>
-                    <li className='my-4 py-2'>STRIVING TOWARD PERFECTING AND INNOVATING OUR PRODUCTS AND SERVICES</li>
-                    <li className='my-4 py-2'> ARE WORKING WITH HONESTY, TRUST, TRANSPARENCY AND ETHICS</li>
-                    <li className='my-4 py-2'>HAVE CUSTOMER SATISFACTION AND CUSTOMER SERVICE AS OUT TOP MOST PRIORITY</li>
-                    <li className='my-4 py-2'> ARE IN A CONSTANT PURSUIT OF GROWTH WITHOUT COMPROMISING ON QUALITY, VALUES AND ETHICS</li>
-                    <li className='my-4 py-2'>VALUE OUR TEAM SPIRIT AND ARE WORKING TOWARDS MAKING THE WORK ENVIORNMENT RISK-FREE</li>
+                    <li className='lg:my-4 py-2'>STRIVING TOWARD PERFECTING AND INNOVATING OUR PRODUCTS AND SERVICES</li>
+                    <li className='lg:my-4 py-2'> ARE WORKING WITH HONESTY, TRUST, TRANSPARENCY AND ETHICS</li>
+                    <li className='lg:my-4 py-2'>HAVE CUSTOMER SATISFACTION AND CUSTOMER SERVICE AS OUT TOP MOST PRIORITY</li>
+                    <li className='lg:my-4 py-2'> ARE IN A CONSTANT PURSUIT OF GROWTH WITHOUT COMPROMISING ON QUALITY, VALUES AND ETHICS</li>
+                    <li className='lg:my-4 py-2'>VALUE OUR TEAM SPIRIT AND ARE WORKING TOWARDS MAKING THE WORK ENVIORNMENT RISK-FREE</li>
                 </ul>
 
             </div>
