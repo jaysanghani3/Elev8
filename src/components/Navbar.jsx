@@ -15,23 +15,23 @@ const Navbar = () => {
     const RenderToggleButton = () => (
         <button onClick={() => setIsOpen(!isOpen)} className="text-white focus:outline-none">
             {isOpen ? (
-                <img src={Close} alt="Close" className="h-6" />
+                <img src={Close} alt="Close" className="h-6" loading='lazy'/>
             ) : (
-                <img src={Menu} alt="Menu" className="h-6" />
+                <img src={Menu} alt="Menu" className="h-6" loading='lazy'/>
             )}
         </button>
     );
     return (
         <nav className="bg-gray-200 sticky top-0 z-50 h-[9vh] flex justify-between items-center px-10">
             <Link to='/'>
-                <img src={Logo} className="h-10" alt="Elev8" />
+                <img src={Logo} className="h-10" alt="Elev8" loading='lazy'/>
             </Link>
             <div className="sm:hidden">
                 <RenderToggleButton />
             </div>
             <div className={`fixed inset-0 z-50 flex flex-col bg-gray-200 transition-transform transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} sm:relative sm:flex-row sm:translate-x-0 sm:items-center sm:justify-end sm:bg-transparent sm:space-x-1 md:space-x-4 sm:p-0`}>
                 <div className="flex items-center justify-between p-4 sm:hidden">
-                    <img src={Logo} className="h-10" alt="Elev8" />
+                    <img src={Logo} className="h-10" alt="Elev8" loading='lazy'/>
                     <RenderToggleButton />
                 </div>
                 {

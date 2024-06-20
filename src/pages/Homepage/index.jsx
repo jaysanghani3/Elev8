@@ -1,11 +1,19 @@
 import { Link } from "react-router-dom";
-import { Carousel, Milestones } from "../../components";
+import { Milestones } from "../../components";
 import { C0, C1, C2, C3, C4, A0 } from "../../assets";
 import Vd from "../../assets/VTLMARKETING.webm";
+import { Suspense, lazy } from "react";
 
+const Carousel = lazy(() => import("../../components/Carousel"));
 const Homepage = () => (
   <div className="">
-    <Carousel slides={[C0, C1, C2, C3, C4]} styles={"w-full h-[250px] sm:h-[400px] lg:h-[500px] lg:h-[600px] xl:h-[85vh] object-cover"} />
+    <Suspense fallback={<div className="animate-pulse w-full h-[250px] sm:h-[400px] lg:h-[500px] xl:h-[85vh] bg-gray-300 rounded-lg">
+      <div className="flex justify-center items-center h-full">
+        <div className="w-10/12 h-10/12 bg-gray-400 rounded"></div>
+      </div>
+    </div>}>
+      <Carousel slides={[C0, C1, C2, C3, C4]} styles={"w-full h-[250px] sm:h-[400px] lg:h-[500px] lg:h-[600px] xl:h-[85vh] object-cover"} />
+    </Suspense>
     <video className="w-11/12 lg:w-10/12 mx-auto rounded-lg mt-10 " autoPlay muted controls controlsList="nodownload">
       <source
         src={Vd}
@@ -24,7 +32,7 @@ const Homepage = () => (
           “ Elev8 is a brand that prides itself on manufacturing some of the most reliable, agile, robust, and safety-focused Mobile Elevated Work Platforms (MEWPs). We have a range of <i>push around</i> and <i>self propelled</i> machines in our portfolio. Our customers can choose a suitable machine based on the application of work where they want to deploy our machines. Our machines can service heights as high as <i>40 feet / 12 m</i> using either <i>single vertical mast technology or a multi stack scissor technology. </i>”
         </p>
       </div>
-      <img src={C0} alt="construction" className="lg:w-4/12 xl:w-3/12 hidden lg:block mt-4 object-cover rounded-lg" />
+      <img src={C0} alt="construction" className="lg:w-4/12 xl:w-3/12 hidden lg:block mt-4 object-cover rounded-lg" loading='lazy' />
     </Link>
     <Link
       to="/aboutus" className="w-11/12 lg:w-10/12 mx-auto flex justify-between flex-row-reverse p-5 rounded-lg shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] mt-10 hover:bg-gray-200">
@@ -39,7 +47,7 @@ const Homepage = () => (
 
         </p>
       </div>
-      <img src={A0} alt="construction" className="lg:w-4/12 hidden lg:block object-scale-down rounded-lg " />
+      <img src={A0} alt="construction" className="lg:w-4/12 hidden lg:block object-scale-down rounded-lg " loading='lazy' />
     </Link>
     <Milestones />
   </div>
