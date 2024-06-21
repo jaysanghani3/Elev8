@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Milestones } from "../../components";
 import { C0, C1, C2, C3, C4, A0 } from "../../assets";
 import Vd from "../../assets/VTLMARKETING.webm";
+import Marquee from "../../components/Marquee";
 import { Suspense, lazy } from "react";
 
 const Carousel = lazy(() => import("../../components/Carousel"));
@@ -50,6 +51,7 @@ const Homepage = () => (
       <img src={A0} alt="construction" className="lg:w-4/12 hidden lg:block object-scale-down rounded-lg " loading='lazy' />
     </Link>
     <Milestones />
+    <Marquee />
   </div>
 );
 
