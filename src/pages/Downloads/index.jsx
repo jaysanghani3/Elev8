@@ -1,7 +1,7 @@
 import CertificateOfCompliance from '../../assets/pdfs/2250_HIGHREACH.pdf';
 import ISO_Stander_Certificate from '../../assets/pdfs/2253_HIGHREACH.pdf';
 import ISO_Validation_Certificate from '../../assets/pdfs/HIGHREACH_ISO_9001_2015_CERTIFICATE.pdf'
-
+import VCL_Catalog from '../../assets/pdfs/Elev8 VTL DC series calatog.pdf';
 const Downloads = () => {
 
   const handleDownload = (fileUrl) => {
@@ -12,7 +12,7 @@ const Downloads = () => {
     {
       title: "VTL DC Series Catalog",
       description:  "Explore our VTL DC Series catalog for detailed information on our latest product features and innovations.Understand our full range of capabilities and solutions.Download now to see how we can meet your industrial needs.",
-      fileUrl: CertificateOfCompliance,
+      fileUrl: VCL_Catalog,
     },
     {
       title: "CERTIFICATE OF COMPLIANCE - CE",
