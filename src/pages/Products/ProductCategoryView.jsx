@@ -2,17 +2,10 @@ import { useParams } from "react-router-dom";
 import { productsData } from "../../Data";
 import { Carousel } from "../../components";
 import { VTLCATALOG } from "../../assets";
-import { useState } from "react";
 
 const ProductCategoryView = () => {
   const { categoryId } = useParams();
   const categoryData = categoryId === "vtl" ? productsData.vtl : productsData.scl;
-
-  const [imageLoaded, setImageLoaded] = useState(false);
-
-  const handleImageLoad = () => {
-    setImageLoaded(true);
-  };
 
   return (
     <div className="p-4 mx-auto sm:w-11/12">
@@ -37,14 +30,12 @@ const ProductCategoryView = () => {
             <Carousel slides={item.image} styles={`w-full object-scale-down ${categoryId === "scl" ? 'h-[220px] sm:h-[330px] lg:w-[500px] lg:h-[300px] xl:w-[600px] xl:h-[450px]' : (item.id === 'V04' || item.id === 'V05') ? 'h-[550px] lg:w-[400px] lg:h-[500px] xl:h-[600px]' : ' h-[420px] lg:h-[420px] xl:h-[550px]'}`} />
           </div>
           <div className={`flex flex-col items-center w-full ${categoryId === "vtl" ? 'lg:w-7/12' : 'lg:w-6/12'}`}>
-            {!imageLoaded && <div className={` mt-3 animate-pulse w-full ${categoryId === "scl" ? 'lg:h-[400px] xl:h-[450px] w-2/4' : (item.id === 'V04' || item.id === 'V05') ? 'lg:h-[500px] xl:h-[600px]' : 'lg:h-[400px] xl:h-[550px]'} bg-gray-300 rounded-lg`} />}
             <img
               src={item.specsImg}
               alt={item.name}
               className={`object-cover rounded-lg lg:mt-5 ${categoryId === "scl" ? 'lg:h-[400px] xl:h-[450px]' : (item.id === 'V04' || item.id === 'V05') ? 'lg:h-[500px] xl:h-[600px]' : 'lg:h-[400px] xl:h-[550px]'}`}
-              loading="lazy"
-              onLoad={handleImageLoad}
-              style={{ display: imageLoaded ? 'block' : 'none' }} />  </div>
+              loading="lazy" />
+          </div>
         </div>
       ))}
     </div>
