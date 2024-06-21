@@ -25,15 +25,15 @@ const Footer = () => {
           <h2 className="text-2xl font-bold underline underline-offset-[12px] decoration-4 decoration-blue-400">Elev8</h2>
           <div className="mt-2">
             <div className="flex my-5">
-              <img src={PhoneIcon} alt="phone" className="w-6 h-6 mr-4  " />
+              <img src={PhoneIcon} alt="phone" className="w-6 h-6 mr-4  " loading='lazy'/>
               <span>+91 8850332794</span>
             </div>
             <div className="flex my-5">
-              <img src={MailIcon} alt="mail" className="w-6 h-6 mr-4  " />
+              <img src={MailIcon} alt="mail" className="w-6 h-6 mr-4  " loading='lazy'/>
               <a href="mailto:sales@elev8lift.in">sales@elev8lift.in</a>
             </div>
             <div className="flex my-5">
-              <img src={LocationIcon} alt="location" className="w-6 h-6 mr-4  " />
+              <img src={LocationIcon} alt="location" className="w-6 h-6 mr-4  " loading='lazy'/>
               <address className="not-italic">
                 <p>HIGH REACH</p>
                 <p>Road C, AJI GIDC</p>
