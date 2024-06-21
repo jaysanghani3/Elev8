@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Carousel, Milestones } from "../../components";
 import { C0, C1, C2, C3, C4, A0 } from "../../assets";
 import Vd from "../../assets/VTLMARKETING.webm";
-
+import Marquee from "../../components/Marquee";
 const Homepage = () => (
   <div className="">
     <Carousel slides={[C0, C1, C2, C3, C4]} styles={"w-full h-[250px] sm:h-[400px] lg:h-[500px] lg:h-[600px] xl:h-[85vh] object-cover"} />
@@ -42,6 +42,7 @@ const Homepage = () => (
       <img src={A0} alt="construction" className="lg:w-4/12 hidden lg:block object-scale-down rounded-lg " />
     </Link>
     <Milestones />
+    <Marquee />
   </div>
 );
 
