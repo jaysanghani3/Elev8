@@ -1,5 +1,5 @@
 export { default as Close } from "./Icons/close.svg";
-export { default as Logo } from "./logo.png";
+export { default as Logo } from "./logo.webp";
 export { default as Menu } from "./Icons/menu.svg";
 export { default as PhoneIcon } from "./Icons/Phone.svg";
 export { default as MailIcon } from "./Icons/Mail.svg";
