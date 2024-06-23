@@ -4,7 +4,7 @@ export { default as Menu } from "./Icons/menu.svg";
 export { default as PhoneIcon } from "./Icons/Phone.svg";
 export { default as MailIcon } from "./Icons/Mail.svg";
 export { default as LocationIcon } from "./Icons/location.svg";
-
+export { default as Dummy } from "./dummy.webp";
 export {default as A0} from './About/A0.webp'
 export { default as A1} from "./About/A1.webp"
 export { default as HighReach1} from './About/HighReach1.webp'

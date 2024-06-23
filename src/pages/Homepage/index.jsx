@@ -44,7 +44,6 @@ const Homepage = () => (
         </h1>
         <p className="text-justify mt-11">
           “ Elev8 brand comes alive by its brilliant team of Design Engineers, Mechanics, Quality Control Personnel, Service Engineers, Sales Executives and many more! We pride ourselves on manufacturing premium quality Mobile Elevated Work Platforms (MEWPs) in INDIA. Our group has a rich history and extensive experience in the manufacturing industry. We are a family owned business and have been working in the manufacturing industry for the last 60 years. ”
-
         </p>
       </div>
       <img src={A0} alt="construction" className="lg:w-4/12 hidden lg:block object-scale-down rounded-lg " loading='lazy' />
