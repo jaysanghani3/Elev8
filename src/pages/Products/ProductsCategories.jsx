@@ -21,7 +21,7 @@ const ProductsCategories = () => {
 
     return (
         <div className="md:px-10 md:py-3 px-5">
-            <h1 className='text-4xl font-bold text-[#01204E] mt-12 text-center'>Products</h1>
+            <h1 className='text-4xl font-bold text-[#01204E] mt-6 text-center'>Products</h1>
             <div className='flex flex-col md:flex-row justify-center mt-12'>
                 {categories.map((category) => (
                     <Link
