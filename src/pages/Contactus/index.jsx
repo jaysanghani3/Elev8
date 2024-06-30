@@ -77,7 +77,7 @@ const Contactus = () => {
     };
 
     return (
-        <div className='bg-cover flex justify-center items-center flex-col bg-slate-300'>
+        <div className='bg-cover flex justify-center items-center flex-col bg-slate-300 py-12'>
             <Toaster />
             <div className="lg:flex justify-center items-center py-4 lg:py-10 mx-3 lg:w-full">
                 <div className='bg-gray-800 lg:h-[550px] rounded-2xl rounded-b-none lg:rounded-bl-2xl lg:rounded-r-none mx-5 lg:mx-0 w-16' ></div>

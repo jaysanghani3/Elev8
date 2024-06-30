@@ -11,16 +11,18 @@ const ProductCategoryView = () => {
     <div className="p-4 mx-auto sm:w-11/12">
       {categoryId === "vtl" &&
         <>
-          <p className="text-justify">
-            &#34; The VTL series, short for VERTICAL LIFT SERIES, is a push around machine that works on single mast technology. It runs a 12 V DC battery which makes it a very versatile machine. Some of the USPs of these types of machines include light weight for easy maneuverability, compact size for movement around tight spaces, one man operation, robust construction etc. There are five variants available in this series
+        <h1 className=" text-[#01204E] col-span-full text-2xl font-bold underline decoration-yellow-400 underline-offset-8 decoration-4 mt-3 mb-6 text-center">Introduces VTL Series</h1>
+          <p className="text-justify px-2 lg:px-16 text-lg">
+            The VTL series, short for VERTICAL LIFT SERIES, is a push around machine that works on single mast technology. It runs a 12 V DC battery which makes it a very versatile machine. Some of the USPs of these types of machines include light weight for easy maneuverability, compact size for movement around tight spaces, one man operation, robust construction etc. There are five variants available in this series
           </p>
-          <ul className="m-3">
-            <li>- VTL 20 DC</li>
-            <li>- VTL 25 DC</li>
-            <li>- VTL 30 DC</li>
-            <li>- VTL 36 DC</li>
-            <li>- VTL 40 DC &ldquo;</li>
-          </ul>
+        <h1 className=" text-[#01204E] col-span-full text-2xl font-bold underline decoration-yellow-400 underline-offset-8 decoration-4 mt-12 text-center">Models</h1>
+        <div className="flex flex-wrap lg:w-9/12 mt-6 mx-auto">
+          {['VTL 20 DC', 'VTL 25 DC', 'VTL 30 DC', 'VTL 36 DC', 'VTL 40 DC'].map((item) => (
+            <div key={item} className="bg-gray-200 px-12 py-2 mx-3 my-2 rounded-lg text-center">
+              <h2 className=" text-sm md:text-xl font-semibold">{item}</h2>
+            </div>
+          ))}
+        </div>
           <img src={VTLCATALOG} alt="cover" className="mx-auto w-full sm:w-11/12 object-cover rounded-lg mt-10" loading="lazy" />
         </>}
       {categoryData.map((item) => (
