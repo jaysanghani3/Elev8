@@ -24,7 +24,7 @@ const Navbar = () => {
     return (
         <nav className="bg-gray-200 sticky top-0 z-50 h-[9vh] flex justify-between items-center px-10">
             <Link to='/'>
-                <img src={Logo} className="h-10" alt="Elev8" loading='lazy'/>
+                <img src={Logo} className="h-16" alt="Elev8" loading='lazy'/>
             </Link>
             <div className="sm:hidden">
                 <RenderToggleButton />
@@ -36,7 +36,7 @@ const Navbar = () => {
                 </div>
                 {
                     menus.map((link, index) => (
-                        <Link key={index} to={link.route} onClick={() => setIsOpen(!isOpen)} className="p-4 hover:bg-gray-800 hover:text-white rounded text-center font-semibold sm:p-0 sm:px-2 md:px-4 sm:py-2">
+                        <Link key={index} to={link.route} onClick={() => setIsOpen(!isOpen)} className="px-4 hover:bg-gray-800 hover:text-white rounded text-center font-semibold sm:p-0 sm:px-2 md:px-4 sm:py-2">
                             {link.name}
                         </Link>
                     ))

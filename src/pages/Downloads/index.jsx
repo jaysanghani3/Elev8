@@ -24,7 +24,7 @@ const Downloads = () => {
         <h1 className="text-2xl md:text-4xl">Downloads</h1>
         <div className="flex flex-col py-9">
           {certificates.map((cert, index) => (
-            <div key={index} className={`flex flex-col lg:flex-row lg:justify-between lg:items-center ${index % 2 != 0 ? 'bg-slate-100' : ''} px-3 rounded-lg`}>
+            <div key={index} className={`flex flex-col lg:flex-row lg:justify-between lg:items-center ${index !==0 ?'mt-5':''} px-3 rounded-lg`}>
               <div className="flex flex-col lg:me-4 mb-2">
                 <p className="text-[#01204E] col-span-full text-2xl font-bold underline decoration-yellow-400 underline-offset-8 decoration-4 mt-3 mb-6">{cert.title}</p>
                 <p className='text-justify text-[#01204E] pe-24'>{cert.description}</p>
