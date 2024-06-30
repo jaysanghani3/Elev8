@@ -1,7 +1,7 @@
 const Milestones = () => {
   const data = [
     { title: 'PRODUCTS', number: 13 },
-    { title: 'Team Members', number: 45 },
+    { title: 'Team Members', number: 110 },
     { title: 'PRESENCE IN INDIAN CITIES', number: 6 },
     { title: 'ESTEEMED CUSTOMERS', number: 30 },
   ];
