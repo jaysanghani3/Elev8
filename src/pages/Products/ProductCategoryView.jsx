@@ -10,18 +10,22 @@ const ProductCategoryView = () => {
     <div className="p-4 mx-auto sm:w-11/12">
       {categoryId === "vtl" &&
         <>
+        <div className="w-11/12 lg:w-9/12 mx-auto  my-11 p-5 rounded-lg shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] ">
         <h1 className=" text-[#01204E] col-span-full text-2xl font-bold underline decoration-yellow-400 underline-offset-8 decoration-4 mt-3 mb-6 text-center">Introducing VTL Series</h1>
-        <p className="text-justify px-2 lg:w-9/12 mx-auto text-lg">
+        <p className="text-justify text-lg">
             The VTL series, short for VERTICAL LIFT SERIES, is a push around machine that works on single mast technology. It runs a 12 V DC battery which makes it a very versatile machine. Some of the USPs of these types of machines include light weight for easy maneuverability, compact size for movement around tight spaces, one man operation, robust construction etc. There are five variants available in this series
           </p>
-        <h1 className=" text-[#01204E] col-span-full text-2xl font-bold underline decoration-yellow-400 underline-offset-8 decoration-4 mt-12 text-center">Models</h1>
-        <div className="flex flex-wrap lg:w-9/12 mt-6 justify-between mx-auto">
-          {['VTL 20 DC', 'VTL 25 DC', 'VTL 30 DC', 'VTL 36 DC', 'VTL 40 DC'].map((item) => (
-            <div key={item} className="bg-gray-200 px-12 py-2 mx-3 my-2 rounded-lg text-center">
-              <h2 className=" text-sm font-semibold">{item}</h2>
-            </div>
-          ))}
-        </div>
+          </div>
+        <div className="flex flex-col border-b-2 pb-8 lg:w-9/12 mx-auto my-11 p-5 rounded-lg shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] "> 
+          <h1 className=" text-[#01204E] col-span-full text-2xl font-bold underline decoration-yellow-400 underline-offset-8 decoration-4 mt-2 text-center">Models</h1>
+          <div className="flex flex-wrap mt-6 justify-between">
+            {['VTL 20 DC', 'VTL 25 DC', 'VTL 30 DC', 'VTL 36 DC', 'VTL 40 DC'].map((item) => (
+              <div key={item} className="bg-gray-200 px-12 py-2 mx-3 my-2 rounded-lg text-center">
+                <h2 className=" text-sm font-semibold">{item}</h2>
+              </div>
+            ))}
+          </div>
+       </div>
         </>}
       {categoryData.map((item) => (
         <div key={item.id} className="flex flex-wrap border-b-2 p-2 mt-5 justify-between sm:w-11/12 xl:w-9/12 mx-auto items-center">

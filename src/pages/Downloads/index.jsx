@@ -15,22 +15,7 @@ const Downloads = () => {
       title: "SCL DC Series Catalog",
       description:  "Explore our SCL DC Series catalog for detailed information on our latest product features and innovations.Understand our full range of capabilities and solutions.Download now to see how we can meet your industrial needs.",
       fileUrl: VCL_Catalog,
-    },
-    // {
-    //   title: "CERTIFICATE OF COMPLIANCE - CE",
-    //   description: "",
-    //   fileUrl: CertificateOfCompliance,
-    // },
-    // {
-    //   title: "CERTIFICATE OF COMPLIANCE - ISO 16368:2010",
-    //   description: "",
-    //   fileUrl: ISO_Stander_Certificate,
-    // },
-    // {
-    //   title: "CERTIFICATE OF COMPLIANCE - ISO 9001:2015",
-    //   description: "",
-    //   fileUrl: ISO_Validation_Certificate,
-    // }
+    }
   ];
 
   return (
