@@ -11,6 +11,11 @@ const Downloads = () => {
       description:  "Explore our VTL DC Series catalog for detailed information on our latest product features and innovations.Understand our full range of capabilities and solutions.Download now to see how we can meet your industrial needs.",
       fileUrl: VCL_Catalog,
     },
+    {
+      title: "SCL DC Series Catalog",
+      description:  "Explore our SCL DC Series catalog for detailed information on our latest product features and innovations.Understand our full range of capabilities and solutions.Download now to see how we can meet your industrial needs.",
+      fileUrl: VCL_Catalog,
+    },
     // {
     //   title: "CERTIFICATE OF COMPLIANCE - CE",
     //   description: "",
