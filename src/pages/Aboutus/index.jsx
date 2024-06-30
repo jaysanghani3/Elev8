@@ -31,11 +31,11 @@ const Aboutus = () => (
             <img src={corevalues} alt='innovation' className='w-[450px]' loading='lazy' />
             <div className='flex flex-col justify-center '>
                 <ul className='list-disc ml-5'>
-                    <li className='lg:my-4 py-2'>STRIVING TOWARD PERFECTING AND INNOVATING OUR PRODUCTS AND SERVICES</li>
-                    <li className='lg:my-4 py-2'> ARE WORKING WITH HONESTY, TRUST, TRANSPARENCY AND ETHICS</li>
-                    <li className='lg:my-4 py-2'>HAVE CUSTOMER SATISFACTION AND CUSTOMER SERVICE AS OUT TOP MOST PRIORITY</li>
-                    <li className='lg:my-4 py-2'> ARE IN A CONSTANT PURSUIT OF GROWTH WITHOUT COMPROMISING ON QUALITY, VALUES AND ETHICS</li>
-                    <li className='lg:my-4 py-2'>VALUE OUR TEAM SPIRIT AND ARE WORKING TOWARDS MAKING THE WORK ENVIORNMENT RISK-FREE</li>
+                    <li className='lg:my-4 py-2'>STRIVING TOWARD <b className='text-lg pe-1'>PERFECTING</b> AND <b className='text-lg pe-1'>INNOVATING</b> OUR PRODUCTS AND SERVICES</li>
+                    <li className='lg:my-4 py-2'> ARE WORKING WITH <b className='text-lg pe-1'>HONESTY, TRUST, TRANSPARENCY</b> AND <b className='text-lg pe-1'>ETHICS</b></li>
+                    <li className='lg:my-4 py-2'>HAVE <b className='text-lg pe-1'>CUSTOMER SATISFACTION</b> AND CUSTOMER SERVICE AS OUT TOP MOST PRIORITY</li>
+                    <li className='lg:my-4 py-2'> ARE IN A CONSTANT PURSUIT OF <b className='text-lg pe-1'>GROWTH</b> WITHOUT COMPROMISING ON QUALITY, VALUES AND ETHICS</li>
+                    <li className='lg:my-4 py-2'>VALUE OUR <b className='text-lg pe-1'>TEAM SPIRIT</b> AND ARE WORKING TOWARDS MAKING THE WORK ENVIORNMENT <b className='text-lg pe-1'>RISK-FREE</b></li>
                 </ul>
             </div>
         </div>

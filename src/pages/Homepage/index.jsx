@@ -12,7 +12,9 @@ const Homepage = () => (
         <div className="w-10/12 h-10/12 bg-gray-400 rounded"></div>
       </div>
     </div>}>
-      <Carousel slides={[C0, C1, C2, C3, C4]} styles={"w-10/12 lg:w-9/12 h-[250px] sm:h-[400px] lg:h-[500px] lg:h-[600px] xl:h-[85vh] object-cover mt-3"} />
+    <div className="w-10/12 lg:w-9/12 mx-auto mt-10">
+      <Carousel slides={[C0, C1, C2, C3, C4]} styles={"h-[250px] sm:h-[400px] lg:h-[500px] lg:h-[600px] xl:h-[85vh] object-cover"} />
+      </div>
     </Suspense>
     <video className="w-10/12 lg:w-9/12 mx-auto rounded-lg mt-10 " autoPlay muted controls controlsList="nodownload">
       <source
