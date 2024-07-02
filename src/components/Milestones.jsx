@@ -10,7 +10,7 @@ const Milestones = () => {
       <h1 className=" text-[#01204E] col-span-full text-2xl font-bold underline decoration-yellow-400 underline-offset-8 decoration-4 mb-2">Milestones</h1>
       {data.map((item) => (
         <div key={item.title} className="bg-gray-200 p-4 rounded-lg text-center">
-          <h2 className=" text-sm md:text-xl font-semibold mb-3">{item.title}</h2>
+          <h2 className="text-lg font-semibold mb-3">{item.title}</h2>
           <p className=" text-xl md:text-3xl font-bold">{item.number} + </p>
         </div>
       ))}

@@ -42,7 +42,7 @@ const ProductCategoryView = () => {
             <h1 className="font-bold text-[#01204E] text-center lg:text-left text-2xl lg:text-3xl ps-3 tracking-wider underline decoration-yellow-400 underline-offset-8 decoration-4 pb-8">{item.name}</h1>
             <Carousel
               slides={item.image}
-              styles={`w-full object-scale-down ${categoryId === "scl" ? 'h-[220px] sm:h-[330px] lg:w-[500px] lg:h-[300px] xl:w-[600px] xl:h-[450px]' : (item.id === 'V04' || item.id === 'V05') ? 'h-[550px] lg:w-[400px] lg:h-[500px] xl:h-[600px]' : ' h-[420px] lg:h-[420px] xl:h-[550px]'}`}
+              styles={`w-full object-cover ${categoryId === "scl" ? 'h-[220px] sm:h-[330px] lg:w-[500px] lg:h-[300px] xl:w-[600px] xl:h-[450px]' : (item.id === 'V04' || item.id === 'V05') ? 'h-[550px] lg:w-[400px] lg:h-[500px] xl:h-[600px]' : ''}`}
             />
           </div>
           <div className={`flex flex-col items-end w-full ${categoryId === "vtl" ? 'lg:w-7/12' : 'lg:w-6/12'}`}>
@@ -50,7 +50,6 @@ const ProductCategoryView = () => {
               src={item.specsImg}
               alt={item.name}
               className={`object-cover rounded-lg lg:mt-5 ${categoryId === "scl" ? 'lg:h-[400px] xl:h-[450px]' : (item.id === 'V04' || item.id === 'V05') ? 'lg:h-[500px] xl:h-[600px]' : 'lg:h-[400px] xl:h-[550px]'}`}
-              loading="lazy"
             />
           </div>
         </div>

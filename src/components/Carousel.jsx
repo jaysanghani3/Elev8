@@ -12,11 +12,13 @@ const Carousel = ({ slides, styles }) => {
     }, [slides.length]);
 
     return (
-        <div className='relative flex flex-col items-center justify-center gap-0 overflow-hidden'>
-            <div className="flex transition-transform duration-1000 ease-in-out" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
-                {slides.map((slide, index) => (
-                    <img src={slide} alt={`carousel-${index}`} className={`min-w-full ${styles}`} key={index} />
-                ))}
+        <>
+            <div className='relative flex flex-col items-center justify-center gap-0 overflow-hidden rounded-lg'>
+                <div className="flex transition-transform duration-1000 ease-in-out rounded-lg" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+                    {slides.map((slide, index) => (
+                        <img src={slide} alt={`carousel-${index}`} className={`min-w-full ${styles}`} key={index} />
+                    ))}
+                </div>
             </div>
             <div className='flex justify-center text-2xl mt-2'>
                 {slides.map((_, slideIndex) => (
@@ -24,8 +26,7 @@ const Carousel = ({ slides, styles }) => {
                         <path d="M4 12L20 12" stroke={slideIndex === currentIndex ? '#01204E' : 'gray'} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                 ))}
-            </div>
-        </div>
+            </div></>
     )
 }
 
